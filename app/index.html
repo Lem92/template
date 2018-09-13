@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="login-btn-wrap btn_full btn_main">
+        <div class="btn-text">Войти</div>
+        <div class="btn-loader"></div>
+        <div class="btn-done">
+            <img src="tick.svg" alt="">
+        </div>
+    </button>
+    <button class="addDone" style="margin-top: 20px">add class done</button>
+    <img src="tick.svg" alt="">
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script>
+    $('.login-btn-wrap').on('click', function () {
+        $(this).addClass('animated');
+    })
+    $('.addDone').on('click', function () {
+        $('.login-btn-wrap').addClass('animated-done');
+    })
+</script>
+</body>
+</html>
